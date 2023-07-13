@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>banking.html</title>
+</head>
+<body>
+<b>DukeBank</b><br>
+メニューを選んで、送信ボタンをクリックして下さい。
+<form action="BankingDispatcherServlet" method="POST">
+<select name="menu">
+<option value="com1">残高照会</option>
+<option value="com2">振込</option>
+<option value="com3">口座開設</option>
+</select>
+<br><br>
+<input type="submit" value="送信">
+</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScriptプログラミング</title>
+<style type="text/css">
+<!--
+body  {background:#ccffcc; font-size:14pt}
+h1    {color:red; text-align:center}
+-->
+</style>
+<script type="text/javascript">
+<!--
+//**画像の変更**
+function changeSlide(sName){
+   document.img01.src='images/' + sName;
+}
+//-->
+</script>
+</head>
+<body>
+<h1>ＷＷＷのしくみ</h1>
+<form>
+<table border="0">
+<tr>
+ <th>
+  <table border="10"><tr><th>
+   <img name="img01" src="images/slide0.gif" width=400 align="left">
+  </th></tr></table>
+ </th>
+ <th align="left">
+   <img src="images/b01.gif" name="b1" width="30"
+    onMouseOver="document.b1.src='images/r01.gif'"
+    onMouseOut="document.b1.src='images/b01.gif'"
+    onClick="changeSlide('slide1.gif')">
+    ここでは、ブラウザ、ＤＮＳサーバ、Ｗｅｂサーバのそれぞれの役割を確認します。<br>
+   <img src="images/b02.gif" name="b2" width="30"
+    onMouseOver="document.b2.src='images/r02.gif'"
+    onMouseOut="document.b2.src='images/b02.gif'"
+    onClick="changeSlide('slide2.gif')">
+    ブラウザの利用者は、ＵＲＬで閲覧したいページを指定します。<br>
+   <img src="images/b03.gif" name="b3" width="30"
+    onMouseOver="document.b3.src='images/r03.gif'"
+    onMouseOut="document.b3.src='images/b03.gif'"
+    onClick="changeSlide('slide3.gif')">
+    ブラウザは、ＵＲＬ記述内のコンピュータ名に対するＩＰアドレスをＤＮＳサーバへ問い合わせます｡<br>
+   <img src="images/b04.gif" name="b4" width="30"
+    onMouseOver="document.b4.src='images/r04.gif'"
+    onMouseOut="document.b4.src='images/b04.gif'"
+    onClick="changeSlide('slide4.gif')">
+    ブラウザは、あらためて、Ｗｅｂサーバに対してページの要求を行います｡<br>
+   <img src="images/b05.gif" name="b5" width="30"
+    onMouseOver="document.b5.src='images/r05.gif'"
+    onMouseOut="document.b5.src='images/b05.gif'"
+    onClick="changeSlide('slide5.gif')">
+    Ｗｅｂサーバは、ブラウザから要求を受けたページをファイルとしてブラウザへ送ります｡<br>
+   <img src="images/b06.gif" name="b6" width="30"
+    onMouseOver="document.b6.src='images/r06.gif'"
+    onMouseOut="document.b6.src='images/b06.gif'"
+    onClick="changeSlide('slide6.gif')">
+    ブラウザは、Ｗｅｂサーバから送られたファイルのＨＴＭＬを解釈して画面に表示します。<br>
+ </th>
+</tr>
+</table>
+</form>
+</body>
+</html>

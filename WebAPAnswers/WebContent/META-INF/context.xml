@@ -1,0 +1,10 @@
+<Context>
+    <Resource
+        name="jdbc/TestWebDB"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        password="system5"
+        type="javax.sql.DataSource"
+        url="jdbc:mysql://localhost/javaweb_db"
+        username="duke" />
+</Context>

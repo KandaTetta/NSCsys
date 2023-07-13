@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>figure-multi-input.html</title>
+</head>
+<body>
+<h1>図形の面積を求めます。<br>
+図形の種類を選択し、各辺の長さを入力してください。</h1>
+※三角形の面積を求める場合は、幅の入力欄へ底辺の長さを入力してください。<br><br>
+<form action="FigureMultiServlet" method="POST">
+<table>
+<tr>
+<td><label>種類:</label></td>
+<td><select name="type">
+<option value="rectangle">長方形</option>
+<option value="triangle">三角形</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label>高さ:</label></td><td><input type="text" name="height">cm</td>
+</tr>
+<tr>
+<td><label>幅（底辺）:</label></td><td><input type="text" name="width">cm</td>
+</tr>
+<tr><td colspan="2" align="right"><input type="submit" value="選択"></td></tr>
+</table>
+</form>
+</body>
+</html>
