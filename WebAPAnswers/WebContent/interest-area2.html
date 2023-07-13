@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>interest-area2.html</title>
+</head>
+<body>
+お名前を入力し、興味のある分野を選択して、
+<br> 送信ボタンをクリックしてください。
+
+<form action="InterestArea.jsp" method="POST">
+<table>
+<tr>
+<td>お名前</td>
+<td><input type="text" name="fullName"></td>
+</tr>
+<tr>
+<td>興味のある分野</td>
+<td>
+<input type="checkbox"  name="interest" value="economy">経済
+<input type="checkbox"  name="interest" value="sports">スポーツ
+<input type="checkbox"  name="interest" value="science">科学
+<input type="checkbox"  name="interest" value="iot">IoT
+<input type="checkbox"  name="interest" value="entertainment">エンタメ
+</td>
+</tr>
+</table>
+<br> <input type="submit" value="送信">
+</form>
+</body>
+</html>

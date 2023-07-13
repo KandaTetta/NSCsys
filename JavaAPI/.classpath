@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Examples"/>
+	<classpathentry kind="src" path="Lmod1"/>
+	<classpathentry kind="src" path="Lmod2"/>
+	<classpathentry kind="src" path="Lmod4"/>
+	<classpathentry kind="src" path="Lmod5"/>
+	<classpathentry kind="src" path="Answers"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java9"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
